@@ -8,6 +8,7 @@ const db = () => firebase.database();
 function Dashboard() {
   const [reservas, handleReservas] = useState([]);
   const [item, setItem] = useState(Number(0));
+  const [input, handleInput] = useState("");
 
   useEffect(() => {
     db().ref("/");
@@ -26,12 +27,9 @@ function Dashboard() {
   };
 
   const myData = JSON.stringify(reservas);
-  const myDashboard = myData.split(",").map((it, i) =>
-    it
-      .replace(RegExp(/([A-Z.*+?^=!$(){}|[\]/\\""a-z])/g), " ")
-      .replace("userInfo", "")
-      .replace(":", "")
-  );
+  const myDashboard = myData
+    .split(",")
+    .map((it, i) => it.substr(it.length - 9));
 
   const productID = myDashboard[item];
   const changeProduct = () => {
@@ -42,6 +40,7 @@ function Dashboard() {
       db()
         .ref("/")
         .on("value", handleReservas);
+      alert("La ID ha sido agregada, ahora se puede renovar con esta App");
     }
   };
 
@@ -56,10 +55,26 @@ function Dashboard() {
     );
   };
 
+  const writeNewID = newID => {
+    firebase
+      .database()
+      .ref("/")
+      .push({
+        newID
+      })
+      .catch(error => {
+        console.log("error ", error);
+      });
+  };
+
   return (
     <div>
       {showProducts()}
-
+      <h5>Escriba el ID del producto a agregar</h5>
+      <input value={input} onChange={e => handleInput(e.target.value)} />
+      <br />
+      <button onClick={() => writeNewID(input)}>Enviar</button>
+      <hr />
       <button onClick={() => logOut()}>Log Out</button>
     </div>
   );
