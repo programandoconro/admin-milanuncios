@@ -12,7 +12,6 @@ import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import withStyles from "@material-ui/core/styles/withStyles";
 import { withRouter } from "react-router-dom";
 import { loginAuth } from "../store/constans";
-import logo from "../assets/cactus.png";
 
 function SignIn(props) {
   const { classes } = props;
@@ -37,10 +36,12 @@ function SignIn(props) {
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon></LockOutlinedIcon>
         </Avatar>
-        <Typography>Administrador productos</Typography>
-        <img src={logo} alt="cactus"></img>
         <Typography component="h1" variant="h5">
-          Milanuncios Admin Panel
+          Mis productos
+        </Typography>
+
+        <Typography component="h1" variant="h5">
+          Milanuncios
         </Typography>
 
         <form
@@ -73,7 +74,7 @@ function SignIn(props) {
             type="submit"
             fullWidth
             variant="contained"
-            color="primary"
+            color="secondary"
             onClick={Login}
           >
             Entrar
@@ -90,7 +91,7 @@ export const styles = theme => ({
     display: "block",
     marginLeft: theme.spacing(3),
     marginRight: theme.spacing(3),
-    backgroundColor: "pink",
+    backgroundColor: "orange",
     [theme.breakpoints.up(400 + theme.spacing(3))]: {
       width: 400,
       marginLeft: "auto",

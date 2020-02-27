@@ -28,17 +28,21 @@ function Dashboard() {
   const myData = JSON.stringify(reservas);
   const myDashboard = myData.split(",").map((it, i) =>
     it
-      .replace(RegExp(/([.*+?^=!$(){}|[\]/\\""a-z])/g), " ")
+      .replace(RegExp(/([A-Z.*+?^=!$(){}|[\]/\\""a-z])/g), " ")
       .replace("userInfo", "")
       .replace(":", "")
   );
 
   const productID = myDashboard[item];
   const changeProduct = () => {
-    setItem(Number(item) + Number(1));
-    db()
-      .ref("/")
-      .on("value", handleReservas);
+    if (item === myDashboard.length) {
+      alert("Todos los anuncios fueron actualizados");
+    } else {
+      setItem(Number(item) + Number(1));
+      db()
+        .ref("/")
+        .on("value", handleReservas);
+    }
   };
 
   const showProducts = () => {
@@ -46,8 +50,8 @@ function Dashboard() {
     return (
       <html>
         <p>{myDashboard[item]}</p>
-        <Iframe height="500px" url={product}></Iframe>
         <button onClick={() => changeProduct()}> Siguiente</button>
+        <Iframe height="500px" url={product}></Iframe>
       </html>
     );
   };
