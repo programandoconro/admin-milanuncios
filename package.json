@@ -1,6 +1,6 @@
 {
   "homepage": "http://programandoconro.github.io/Firebase-Real-Time-Web-Admin-App",
-  "name": "cactusrestaurant",
+  "name": "admin-milanuncios",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,34 +1,17 @@
 import React, { useState, useEffect } from "react";
 import firebase from "firebase/app";
 import "./App.css";
-import { Typography, Paper, Button } from "@material-ui/core";
-import logo from "../assets/cactus.png";
 import Iframe from "react-iframe";
 
 const db = () => firebase.database();
 
 function Dashboard() {
   const [reservas, handleReservas] = useState([]);
-  const [input, handleInput] = useState("");
-  const [item, setItem] = useState("");
+  const [item, setItem] = useState(Number(0));
 
   useEffect(() => {
-    db();
-    console.log("Mounted ");
+    db().ref("/");
   });
-
-  useEffect(() => {
-    db()
-      .ref("/")
-      .on("value", handleReservas);
-  });
-
-  const deleteColletion = () => {
-    firebase
-      .database()
-      .ref("/")
-      .remove();
-  };
 
   const logOut = () => {
     firebase
@@ -42,33 +25,38 @@ function Dashboard() {
       );
   };
 
-  const writeAdminData = userInfo => {
-    firebase
-      .database()
-      .ref("/")
-      .push({
-        userInfo
-      })
-      .catch(error => {
-        console.log("error ", error);
-      });
-  };
-
   const myData = JSON.stringify(reservas);
-  const myDashboard = myData.split(",").map((item, i) =>
-    item
+  const myDashboard = myData.split(",").map((it, i) =>
+    it
       .replace(RegExp(/([.*+?^=!$(){}|[\]/\\""a-z])/g), " ")
       .replace("userInfo", "")
       .replace(":", "")
   );
-  const product = "https://www.milanuncios.com/renovar/?id=" + myDashboard[0];
+
+  const productID = myDashboard[item];
+  const changeProduct = () => {
+    setItem(Number(item) + Number(1));
+    db()
+      .ref("/")
+      .on("value", handleReservas);
+  };
+
+  const showProducts = () => {
+    const product = "https://www.milanuncios.com/renovar/?id=" + productID;
+    return (
+      <html>
+        <p>{myDashboard[item]}</p>
+        <Iframe height="500px" url={product}></Iframe>
+        <button onClick={() => changeProduct()}> Siguiente</button>
+      </html>
+    );
+  };
+
   return (
     <div>
-      <p>{myDashboard[0]}</p>
-      <p>{myDashboard[1]}</p>
+      {showProducts()}
+
       <button onClick={() => logOut()}>Log Out</button>
-      <Iframe url="https://www.milanuncios.com"></Iframe>
-      <Iframe url={product}></Iframe>
     </div>
   );
 }
