@@ -30,7 +30,7 @@ function Dashboard() {
   const myData = JSON.stringify(reservas);
   const myDashboard = myData
     .split(",")
-    .map((it, i) => it.substr(it.length - 9));
+    .map((it, i) => it.substring(it.length - 11, it.length - 2));
 
   const productDescription = myData.split(",").map((it, i) => it);
 
