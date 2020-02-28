@@ -1,16 +1,21 @@
 <html>
 <h3> Administra tus productos de milanuncios.com </h3>
+<img src='https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.milanuncios.com%2F&psig=AOvVaw1IEQzs52pmTM7CbPKzMwMt&ust=1582988355082000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKjfgbPB9OcCFQAAAAAdAAAAABAE'></img>
+
+Esta Web App hace más rápido el proceso de renovar anuncios en milanuncios. No es un Bot pero disminuye el tiempo y esfuerzo humano por cantidad de clicks para renovar los anuncios de cada productos.
 
 <h4>Features: </h4>
-<li>Despliega progresivamente la web de renovación de cada producto en milanuncios.com, haciendo más rápido el proceso si se tienen muchos anuncios.</li>
-<li>Agrega Id's de los nuevos productos a la base de datos Firebase para que poder renovarlos facilmente</li>
-<li>Elimina productos que ya no desees actualizar</li>
+<li>Despliega progresivamente la web de renovación de cada anuncio que tengas en milanuncios.com</li>
+<li>Permite agregar las Id's de los anuncios de milanuncios a tu base de datos en Firebase.com para que poder renovarlos facilmente</li>
+<li>Permite eliminar los anuncios que ya no desees desplegar en la App.</li>
 
 </html>
 
-Configuración:
+Instrucciones:
 
-1. Crear un proyecto en Firebase.com, agregar las credenciales del mismo en `src/storage/constans.js` y cambiar las reglas de seguridad de la "realtime database" a:
+1. `git clone https://github.com/progamandoconro/admin-milanuncios && cd admin-milanuncios`
+
+2. Crea un proyecto Web en Firebase.com, agregar las credenciales del mismo en `src/storage/constans.js` y cambiar las reglas de seguridad de la "realtime database" a:
 
 ```
  {
@@ -21,7 +26,11 @@ Configuración:
 }
 ```
 
-2. Habilitar la opción email/password en la `Authentication` de `Firebase`.
+y habilitar la opción email/password en la `Authentication` del proyecto creado.
+
+Paso a paso: https://dzone.com/articles/how-to-integrate-react-application-using-firebase-1.
+
+3. `npm start`
 
 Uso:
 
