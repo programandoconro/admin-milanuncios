@@ -9,6 +9,7 @@ function Dashboard() {
   const [reservas, handleReservas] = useState([]);
   const [item, setItem] = useState(Number(0));
   const [input, handleInput] = useState("");
+  const [inputDelete, handleInputDelete] = useState("");
 
   useEffect(() => {
     db().ref("/");
@@ -31,8 +32,10 @@ function Dashboard() {
     .split(",")
     .map((it, i) => it.substr(it.length - 9));
 
+  const productDescription = myData.split(",").map((it, i) => it);
+
   const productID = myDashboard[item];
-  const changeProduct = () => {
+  const nextProduct = () => {
     if (item === myDashboard.length) {
       alert("Todos los anuncios fueron actualizados");
     } else {
@@ -40,24 +43,36 @@ function Dashboard() {
       db()
         .ref("/")
         .on("value", handleReservas);
-      alert("La ID ha sido agregada, ahora se puede renovar con esta App");
+    }
+  };
+
+  const previousProduct = () => {
+    if (item === myDashboard.length) {
+      alert("Todos los anuncios fueron actualizados");
+    } else {
+      setItem(Number(item) - Number(1));
+      db()
+        .ref("/")
+        .on("value", handleReservas);
     }
   };
 
   const showProducts = () => {
     const product = "https://www.milanuncios.com/renovar/?id=" + productID;
+    console.log(product);
     return (
       <html>
-        <p>{myDashboard[item]}</p>
-        <button onClick={() => changeProduct()}> Siguiente</button>
+        <p>{productDescription[item]}</p>
+        <button onClick={() => nextProduct()}> Siguiente</button>
         <Iframe height="500px" url={product}></Iframe>
+        <button onClick={() => previousProduct()}> Regresar</button>
+        <Iframe url="https://www.milanuncios.com"></Iframe>
       </html>
     );
   };
 
   const writeNewID = newID => {
-    firebase
-      .database()
+    db()
       .ref("/")
       .push({
         newID
@@ -67,13 +82,27 @@ function Dashboard() {
       });
   };
 
+  const deleteProduct = name => {
+    db()
+      .ref(name)
+      .remove();
+  };
+
   return (
     <div>
       {showProducts()}
-      <h5>Escriba el ID del producto a agregar</h5>
+      <h5>Escriba el ID del producto a AGREGAR</h5>
       <input value={input} onChange={e => handleInput(e.target.value)} />
       <br />
       <button onClick={() => writeNewID(input)}>Enviar</button>
+      <br />
+      <h5>Escriba el NOMBRE del producto a ELIMINAR</h5>
+      <input
+        value={inputDelete}
+        onChange={e => handleInputDelete(e.target.value)}
+      />
+      <br />
+      <button onClick={() => deleteProduct(inputDelete)}> Eliminar </button>
       <hr />
       <button onClick={() => logOut()}>Log Out</button>
     </div>
