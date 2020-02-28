@@ -1,8 +1,16 @@
 <html>
-<h3> Administra tus productos de milanuncios.com </h3>
-<img src='https://scm-milanuncios-frontend-pro.milanuncios.com/statics/images/common/logo.2676833a05.svg'/>
+<h3> Renueva rapidamente tus anuncios de www.milanuncios.com </h3>
+<img class="center" height="100" width="200" src='https://scm-milanuncios-frontend-pro.milanuncios.com/statics/images/common/logo.2676833a05.svg'/>
+ 
+ <h3>Utilizando Firebase Real-Time Database </h3>
+ 
+ <img class="center" src='https://www.gstatic.com/devrel-devsite/prod/vbf4f3f66222b8c8c17b31375459c4f918489da36926d67ecaab655b9dc1cf00f/firebase/images/lockup.png'/>
+ 
+ <h3>... y React </h3>
+ <img class="center" height="100" width="150" src='https://s3-us-west-2.amazonaws.com/devcodepro/media/blog/como-funciona-reactjs.png'/>
+ 
 
-Esta Web App hace más rápido el proceso de renovar anuncios en milanuncios. No es un Bot pero disminuye el tiempo y esfuerzo humano por cantidad de clicks para renovar los anuncios de cada productos.
+Esta Web App hace más rápido el proceso de renovar anuncios en milanuncios. No es un Bot pero disminuye el tiempo y esfuerzo humano por cantidad de clicks para renovar los anuncios de cada productos. Esta App se puede complementar con `xdotool` para automatizar todo el proceso. 
 
 <h4>Features: </h4>
 <li>Despliega progresivamente la web de renovación de cada anuncio que tengas en milanuncios.com</li>
@@ -42,6 +50,5 @@ Uso:
 
 4. Para borrar algún anuncio, ingresa la key de 20 dígigtos asociada a la Id que desees eliminar.
 
-Esta App se puede complementar con `xdotool` para automatizar todo el proceso.
 
 Si me quieres donar un shot de Tequila, programandoconro@hotmail.com es mi paypal.
