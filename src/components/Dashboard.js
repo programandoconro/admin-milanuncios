@@ -96,7 +96,7 @@ function Dashboard() {
       <br />
       <button onClick={() => writeNewID(input)}>Enviar</button>
       <br />
-      <h5>Escriba el NOMBRE del producto a ELIMINAR</h5>
+      <h5>Escriba la KEY del producto a ELIMINAR</h5>
       <input
         value={inputDelete}
         onChange={e => handleInputDelete(e.target.value)}
