@@ -1,6 +1,6 @@
 <html>
 <h3> Administra tus productos de milanuncios.com </h3>
-<img src='https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.milanuncios.com%2F&psig=AOvVaw1IEQzs52pmTM7CbPKzMwMt&ust=1582988355082000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKjfgbPB9OcCFQAAAAAdAAAAABAE'></img>
+<img src='https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.milanuncios.com%2F&psig=AOvVaw1IEQzs52pmTM7CbPKzMwMt&ust=1582988355082000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKjfgbPB9OcCFQAAAAAdAAAAABAE'/>
 
 Esta Web App hace más rápido el proceso de renovar anuncios en milanuncios. No es un Bot pero disminuye el tiempo y esfuerzo humano por cantidad de clicks para renovar los anuncios de cada productos.
 
