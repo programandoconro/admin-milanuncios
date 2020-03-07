@@ -1,7 +1,7 @@
 <html>
 <h3> Renueva rapidamente tus anuncios de www.milanuncios.com con: </h3>
  
- <h3> http://programandoconro.github.io/admin'milanuncios </h3>
+ <h3> http://programandoconro.github.io/admin-milanuncios </h3>
  
 <img class="center" height="100" width="200" src='https://scm-milanuncios-frontend-pro.milanuncios.com/statics/images/common/logo.2676833a05.svg'/>
  
