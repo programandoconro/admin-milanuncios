@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/admin'milanuncios/static/css/main.7f6894d8.chunk.css",
-    "main.js": "/admin'milanuncios/static/js/main.27cce729.chunk.js",
-    "main.js.map": "/admin'milanuncios/static/js/main.27cce729.chunk.js.map",
-    "runtime-main.js": "/admin'milanuncios/static/js/runtime-main.c2868cd2.js",
-    "runtime-main.js.map": "/admin'milanuncios/static/js/runtime-main.c2868cd2.js.map",
-    "static/js/2.f81a67dc.chunk.js": "/admin'milanuncios/static/js/2.f81a67dc.chunk.js",
-    "static/js/2.f81a67dc.chunk.js.map": "/admin'milanuncios/static/js/2.f81a67dc.chunk.js.map",
-    "index.html": "/admin'milanuncios/index.html",
-    "precache-manifest.255be1321cc845c6a2b68c80729fd4b8.js": "/admin'milanuncios/precache-manifest.255be1321cc845c6a2b68c80729fd4b8.js",
-    "service-worker.js": "/admin'milanuncios/service-worker.js",
-    "static/css/main.7f6894d8.chunk.css.map": "/admin'milanuncios/static/css/main.7f6894d8.chunk.css.map",
-    "static/js/2.f81a67dc.chunk.js.LICENSE.txt": "/admin'milanuncios/static/js/2.f81a67dc.chunk.js.LICENSE.txt"
+    "main.css": "/admin-milanuncios/static/css/main.7f6894d8.chunk.css",
+    "main.js": "/admin-milanuncios/static/js/main.27cce729.chunk.js",
+    "main.js.map": "/admin-milanuncios/static/js/main.27cce729.chunk.js.map",
+    "runtime-main.js": "/admin-milanuncios/static/js/runtime-main.f4601dda.js",
+    "runtime-main.js.map": "/admin-milanuncios/static/js/runtime-main.f4601dda.js.map",
+    "static/js/2.66e12d16.chunk.js": "/admin-milanuncios/static/js/2.66e12d16.chunk.js",
+    "static/js/2.66e12d16.chunk.js.map": "/admin-milanuncios/static/js/2.66e12d16.chunk.js.map",
+    "index.html": "/admin-milanuncios/index.html",
+    "precache-manifest.edcf483bba506e61d2c6c84d5b1c2eda.js": "/admin-milanuncios/precache-manifest.edcf483bba506e61d2c6c84d5b1c2eda.js",
+    "service-worker.js": "/admin-milanuncios/service-worker.js",
+    "static/css/main.7f6894d8.chunk.css.map": "/admin-milanuncios/static/css/main.7f6894d8.chunk.css.map",
+    "static/js/2.66e12d16.chunk.js.LICENSE.txt": "/admin-milanuncios/static/js/2.66e12d16.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c2868cd2.js",
-    "static/js/2.f81a67dc.chunk.js",
+    "static/js/runtime-main.f4601dda.js",
+    "static/js/2.66e12d16.chunk.js",
     "static/css/main.7f6894d8.chunk.css",
     "static/js/main.27cce729.chunk.js"
   ]
