@@ -30,11 +30,15 @@ function Dashboard() {
   const myData = JSON.stringify(reservas);
   const myDashboard = myData
     .split(",")
-    .map((it, i) => it.substring(it.length - 11, it.length - 2));
+    .map((it, i) => it.substring(it.length - 12, it.length - 2));
 
   const productDescription = myData.split(",").map((it, i) => it);
 
   const productID = myDashboard[item];
+
+  if (productID !== undefined){
+    productID.slice(0,  - 1)
+  } 
   const nextProduct = () => {
     if (item === myDashboard.length) {
       alert("Todos los anuncios fueron actualizados");
@@ -44,6 +48,7 @@ function Dashboard() {
         .ref("/")
         .on("value", handleReservas);
     }
+    console.log(productID)
   };
 
   const previousProduct = () => {
@@ -61,13 +66,13 @@ function Dashboard() {
     const product = "https://www.milanuncios.com/renovar/?id=" + productID;
     console.log(product);
     return (
-      <html>
+      <div>
         <p>{productDescription[item]}</p>
         <button onClick={() => nextProduct()}> Siguiente</button>
         <Iframe height="500px" url={product}></Iframe>
         <button onClick={() => previousProduct()}> Regresar</button>
-        <Iframe url="https://www.milanuncios.com"></Iframe>
-      </html>
+       
+      </div>
     );
   };
 
