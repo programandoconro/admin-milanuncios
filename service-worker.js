@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/admin-milanuncios/precache-manifest.edcf483bba506e61d2c6c84d5b1c2eda.js"
+  "/admin-milanuncios/precache-manifest.725d0819ac317e69d7a7dd4e39e11af4.js"
 );
 
 self.addEventListener('message', (event) => {
