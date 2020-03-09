@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/admin-milanuncios/static/css/main.e41dc957.chunk.css",
-    "main.js": "/admin-milanuncios/static/js/main.f2280de7.chunk.js",
-    "main.js.map": "/admin-milanuncios/static/js/main.f2280de7.chunk.js.map",
+    "main.js": "/admin-milanuncios/static/js/main.28c60fff.chunk.js",
+    "main.js.map": "/admin-milanuncios/static/js/main.28c60fff.chunk.js.map",
     "runtime-main.js": "/admin-milanuncios/static/js/runtime-main.de154a40.js",
     "runtime-main.js.map": "/admin-milanuncios/static/js/runtime-main.de154a40.js.map",
-    "static/js/2.ffce6140.chunk.js": "/admin-milanuncios/static/js/2.ffce6140.chunk.js",
-    "static/js/2.ffce6140.chunk.js.map": "/admin-milanuncios/static/js/2.ffce6140.chunk.js.map",
+    "static/js/2.d445c025.chunk.js": "/admin-milanuncios/static/js/2.d445c025.chunk.js",
+    "static/js/2.d445c025.chunk.js.map": "/admin-milanuncios/static/js/2.d445c025.chunk.js.map",
     "index.html": "/admin-milanuncios/index.html",
-    "precache-manifest.5f8f1e61eb09c3f917109506be60fcd4.js": "/admin-milanuncios/precache-manifest.5f8f1e61eb09c3f917109506be60fcd4.js",
+    "precache-manifest.ae54c58d1e0aefc2fa2bbd0a3432b5c6.js": "/admin-milanuncios/precache-manifest.ae54c58d1e0aefc2fa2bbd0a3432b5c6.js",
     "service-worker.js": "/admin-milanuncios/service-worker.js",
     "static/css/main.e41dc957.chunk.css.map": "/admin-milanuncios/static/css/main.e41dc957.chunk.css.map",
-    "static/js/2.ffce6140.chunk.js.LICENSE.txt": "/admin-milanuncios/static/js/2.ffce6140.chunk.js.LICENSE.txt"
+    "static/js/2.d445c025.chunk.js.LICENSE.txt": "/admin-milanuncios/static/js/2.d445c025.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.de154a40.js",
-    "static/js/2.ffce6140.chunk.js",
+    "static/js/2.d445c025.chunk.js",
     "static/css/main.e41dc957.chunk.css",
-    "static/js/main.f2280de7.chunk.js"
+    "static/js/main.28c60fff.chunk.js"
   ]
 }
