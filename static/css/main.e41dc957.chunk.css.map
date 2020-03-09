@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css","index.css"],"names":[],"mappings":"AAGE,UACF,WAAY,CACZ,YAAa,CACT,iBAAkB,CAClB,kBAAmB,CACnB,oBACF,CCTF,EACI,UACJ","file":"main.e41dc957.chunk.css","sourcesContent":["\n\n\n  .myButton{\nwidth: 310px;\nheight: 100px;\n    text-align: center;\n    align-items: center;\n    align-content: center;\n  }\n  ","* {\n    padding:  1%;\n}"]}
