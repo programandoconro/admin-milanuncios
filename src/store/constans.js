@@ -1,7 +1,7 @@
 import { auth, database, initializeApp } from "firebase/";
 
 const config = {
- 
+    
 };
 
 initializeApp(config);

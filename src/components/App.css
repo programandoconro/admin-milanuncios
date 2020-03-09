@@ -1,12 +1,11 @@
 
-.myList {
-  
-    padding: 2%;
-    width: 80%;
-    text-align:left;
-    background-color: #f0f0f0;
-    margin-left: 10%;
-  
-  
+
+
+  .myButton{
+width: 310px;
+height: 100px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
   }
   
