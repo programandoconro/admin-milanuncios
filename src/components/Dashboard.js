@@ -71,7 +71,8 @@ function Dashboard() {
         <button className='myButton' onClick={() => nextProduct()}> Siguiente</button>
         <Iframe height="500px" width='300px' url={product}></Iframe>
         <button className='myButton' onClick={() => previousProduct()}> Regresar</button>
-       
+        <h1> Login </h1>
+       <Iframe height="500px" width='300px' url='https://milanuncios.com'></Iframe>
       </div>
     );
   };
