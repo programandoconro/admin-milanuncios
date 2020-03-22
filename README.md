@@ -1,7 +1,11 @@
 <html>
 <h3> Renueva rapidamente tus anuncios de www.milanuncios.com con: </h3>
  
- <h3> http://programandoconro.github.io/admin-milanuncios </h3>
+ Página frontal (autenticación):
+ <h3> https://programandoconro.github.io/admin-milanuncios </h3>
+ 
+ Dashboard sample png:
+ <div> <img src='https://raw.githubusercontent.com/progamandoconro/admin-milanuncios/master/sample.png' /> </div>
  
 <img class="center" height="100" width="200" src='https://scm-milanuncios-frontend-pro.milanuncios.com/statics/images/common/logo.2676833a05.svg'/>
  
@@ -26,7 +30,7 @@ Instrucciones:
 
 1. `git clone https://github.com/progamandoconro/admin-milanuncios && cd admin-milanuncios`
 
-2. Crea un proyecto Web en Firebase.com, agregar las credenciales del mismo en `src/storage/constans.js` y cambiar las reglas de seguridad de la "realtime database" a:
+2. Crea un proyecto Web en https://Firebase.com, agregar las credenciales del mismo en `src/storage/constans.js` y cambiar las reglas de seguridad de la "realtime database" a:
 
 ```
  {
@@ -53,5 +57,10 @@ Uso:
 
 4. Para borrar algún anuncio, ingresa la key de 20 dígigtos asociada a la Id que desees eliminar.
 
+5. Puedes hacer deploy modificando la dirección web en el {atributo homepage} del archivo ```package.json```, agregando el nombre de tu repositorio en Github y usuario. Instala Github-pages y despliega el deploy.
 
+```
+npm install -g github-pages
+npm run deploy
+```
 Si me quieres donar un shot de Tequila, programandoconro@hotmail.com es mi paypal.
