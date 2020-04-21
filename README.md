@@ -2,7 +2,7 @@
 <h3> Renueva rapidamente tus anuncios de www.milanuncios.com con: </h3>
  
  Página frontal (autenticación):
- https://progamandoconro.github.io/admin-milanuncios/
+ https://programandoconro.github.io/admin-milanuncios/
  
  Dashboard sample png:
  <div> <img src='https://raw.githubusercontent.com/progamandoconro/admin-milanuncios/master/sample.png' /> </div>
